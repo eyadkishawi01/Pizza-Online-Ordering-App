@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:get/get.dart';
+import 'package:ui/Screens/item_screen.dart';
 import '../Widgets/category_widget.dart';
 import 'package:awesome_icons/awesome_icons.dart';
 import 'package:feather_icons/feather_icons.dart';
@@ -33,7 +35,7 @@ class HomePage extends StatelessWidget {
                   IconButton(
                       padding: const EdgeInsets.only(top: 30, right: 20),
                       onPressed: () {},
-                      icon: const Icon(FontAwesomeIcons.listUl,
+                      icon: const Icon(FontAwesomeIcons.cartPlus,
                           size: 25, color: Colors.grey)),
                 ],
               ),
@@ -115,30 +117,33 @@ class HomePage extends StatelessWidget {
                 child: ListView.builder(
                   shrinkWrap: true,
                   itemBuilder: ((context, index) {
-                    return Container(
-                      child: Row(
-                        children: [
-                          const SizedBox(width: 25),
-                          CategoryWidget(
-                            imgurl: "assets/pizza.png",
-                            name: "Pizza",
-                            hight: 5,
-                          ),
-                          const SizedBox(width: 25),
-                          CategoryWidget(
-                            imgurl: "assets/soda.png",
-                            name: "Soda",
-                            hight: 16,
-                            hight2: 1.65,
-                          ),
-                          const SizedBox(width: 25),
-                          CategoryWidget(
-                            imgurl: "assets/salad.png",
-                            name: "Salad",
-                            hight: 5,
-                          ),
-                          const SizedBox(width: 25),
-                        ],
+                    return InkWell(
+                      onTap: null,
+                      child: Container(
+                        child: Row(
+                          children: [
+                            const SizedBox(width: 25),
+                            CategoryWidget(
+                              imgurl: "assets/pizza.png",
+                              name: "Pizza",
+                              hight: 5,
+                            ),
+                            const SizedBox(width: 25),
+                            CategoryWidget(
+                              imgurl: "assets/soda.png",
+                              name: "Soda",
+                              hight: 16,
+                              hight2: 1.65,
+                            ),
+                            const SizedBox(width: 25),
+                            CategoryWidget(
+                              imgurl: "assets/salad.png",
+                              name: "Salad",
+                              hight: 5,
+                            ),
+                            const SizedBox(width: 25),
+                          ],
+                        ),
                       ),
                     );
                   }),

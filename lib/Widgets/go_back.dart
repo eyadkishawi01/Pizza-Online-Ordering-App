@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class GoBack extends StatelessWidget {
   const GoBack({Key? key}) : super(key: key);
@@ -15,7 +16,7 @@ class GoBack extends StatelessWidget {
       child: Padding(
           padding: const EdgeInsets.only(left: 2, bottom: 1),
           child: IconButton(
-            onPressed: () {},
+            onPressed: () => Get.back(),
             icon: const Icon(
               Icons.arrow_back_ios,
               color: Colors.grey,

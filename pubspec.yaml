@@ -37,6 +37,8 @@ dependencies:
   community_material_icon: ^5.9.55
   awesome_icons: ^1.1.0
   feather_icons: ^1.2.0
+  get: ^4.6.1
+
 
 
 
