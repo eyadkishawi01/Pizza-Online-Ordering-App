@@ -30,7 +30,7 @@ class CartPage extends StatelessWidget {
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(50),
                               color: Colors.grey),
-                          child: null,
+                          child: Image.asset("assets/profile.png"),
                         ),
                       ],
                     ),
@@ -58,7 +58,9 @@ class CartPage extends StatelessWidget {
                           Text(
                             "Total",
                             style: TextStyle(
-                                fontSize: 30, fontWeight: FontWeight.bold),
+                                fontFamily: 'Sarabun',
+                                fontSize: 30,
+                                fontWeight: FontWeight.bold),
                           ),
                           SizedBox(width: 50),
                           Text(

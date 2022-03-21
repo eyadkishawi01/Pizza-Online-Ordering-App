@@ -6,8 +6,8 @@ class GoBack extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 40,
-      width: 39,
+      height: 37,
+      width: 35,
       decoration: BoxDecoration(
         border: Border.all(color: Colors.grey),
         borderRadius: BorderRadius.circular(9),
@@ -20,7 +20,7 @@ class GoBack extends StatelessWidget {
               Icons.arrow_back_ios,
               color: Colors.grey,
             ),
-            iconSize: 25,
+            iconSize: 20,
           )),
     );
   }

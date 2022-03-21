@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:community_material_icon/community_material_icon.dart';
 
 class CategoryWidget extends StatelessWidget {
   CategoryWidget(
@@ -45,17 +46,10 @@ class CategoryWidget extends StatelessWidget {
                 fontSize: 20, fontWeight: FontWeight.bold, height: hight2),
           ),
           const SizedBox(height: 21),
-          Container(
-            height: 35,
-            width: 35,
-            decoration: const ShapeDecoration(
-                shape: CircleBorder(), color: Color.fromRGBO(255, 90, 90, 1)),
-            child: IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.add),
-              iconSize: 20,
-              color: Colors.white,
-            ),
+          const Icon(
+            CommunityMaterialIcons.plus_circle,
+            color: Color.fromRGBO(255, 90, 90, 1),
+            size: 30,
           ),
         ]),
       )),

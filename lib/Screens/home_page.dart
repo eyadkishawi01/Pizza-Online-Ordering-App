@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import '../Widgets/category_widget.dart';
+import 'package:awesome_icons/awesome_icons.dart';
+import 'package:feather_icons/feather_icons.dart';
 import '../Widgets/for_you_item.dart';
+import 'package:community_material_icon/community_material_icon.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -24,14 +27,14 @@ class HomePage extends StatelessWidget {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(50),
                         color: Colors.grey),
-                    child: null,
+                    child: Image.asset("assets/profile.png"),
                   ),
                   Expanded(child: Container()),
                   IconButton(
                       padding: const EdgeInsets.only(top: 30, right: 20),
                       onPressed: () {},
-                      icon: const Icon(Icons.list_rounded,
-                          size: 35, color: Colors.grey)),
+                      icon: const Icon(FontAwesomeIcons.listUl,
+                          size: 25, color: Colors.grey)),
                 ],
               ),
               const SizedBox(height: 51),
@@ -66,9 +69,10 @@ class HomePage extends StatelessWidget {
                   children: [
                     const Padding(
                       padding: EdgeInsets.only(top: 20),
-                      child: Icon(Icons.search_outlined,
-                          size: 40, color: Colors.grey),
+                      child: Icon(FeatherIcons.search,
+                          size: 30, color: Colors.grey),
                     ),
+                    const SizedBox(width: 3),
                     Flexible(
                       child: Container(
                         height: 40,
@@ -151,24 +155,6 @@ class HomePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 15),
-              // SizedBox(
-              //   height: 500,
-              //   child: ListView.builder(
-              //     itemCount: 3,
-              //     itemBuilder: (context, index) {
-              //       return Container(
-              //         child: Column(
-              //           children: const [
-              //             SizedBox(height: 25),
-              //             ForYouItem(),
-              //             SizedBox(height: 25),
-              //           ],
-              //         ),
-              //       );
-              //     },
-              //     scrollDirection: Axis.vertical,
-              //   ),
-              // ),
               Column(
                 children: const [
                   ForYouItem(),
